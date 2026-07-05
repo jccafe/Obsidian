@@ -29,7 +29,7 @@ jobs:
       - name: Upgrade npm
         run: npm install -g npm@latest
       - name: Install Dependencies
-        run: npm install --ignore-engines
+        run: npm install
       - name: Install Plugins
         run: npm run install-plugins
       - name: Build Quartz
