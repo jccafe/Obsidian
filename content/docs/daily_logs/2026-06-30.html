@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工作日誌 - 2026-06-30</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #161b22;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+            border: 1px solid #30363d;
+        }
+        h1 {
+            color: #58a6ff;
+            font-size: 2.2em;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 15px;
+            margin-top: 0;
+        }
+        h2 {
+            color: #ff7b72;
+            font-size: 1.5em;
+            margin-top: 30px;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 8px;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #30363d;
+            margin: 30px 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 12px;
+        }
+        code {
+            background-color: rgba(110,118,129,0.2);
+            padding: 3px 6px;
+            border-radius: 6px;
+            font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+            font-size: 85%;
+            color: #ff7b72;
+        }
+        pre {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 16px;
+            overflow: auto;
+        }
+        pre code {
+            background-color: transparent;
+            color: #c9d1d9;
+            padding: 0;
+        }
+        blockquote {
+            border-left: 4px solid #ff7b72;
+            color: #8b949e;
+            padding-left: 16px;
+            margin: 20px 0;
+            background-color: rgba(240,128,128,0.05);
+            padding: 10px 16px;
+            border-radius: 0 8px 8px 0;
+        }
+        strong {
+            color: #f0883e;
+        }
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <br><h1>📅 每日工作日誌 (2026-06-30)</h1><br><hr><br><br><h2>📝 當日工作日誌 (Today's Progress)</h2><br>今日成功圍繞 <strong>Certified LabVIEW Developer (CLD) 認證知識庫</strong> 進行了深度的內容建置、結構優化與雙向關係圖譜映射：<br><br>1. <strong>CLD 實戰與架構指南建置</strong>：<br><ul><li>建立了 <code>CLD_Guide/LabVIEW CLD 認證實戰練習與架構指南.md</code> 核心地圖。</li><br><li>將 17 個練習單元以「計時器」、「檔案與字串」、「循序器與狀態機」、「UI 模擬」四大技術路徑進行系統化整理，配以 Mermaid 架構圖。</li><br></ul>2. <strong>批量生成 17 篇 Exercise 單元筆記</strong>：<br><ul><li>批量建立了 <code>CLD_Guide/CLD Exercise 1.md</code> 到 <code>CLD Exercise 17.md</code> 總計 17 篇詳細筆記，填補了空連結缺陷。</li><br><li>每篇筆記包含核心概念、易錯 Gotchas（使用 Warning Block 提示）以及與其他單元的 WikiLinks 雙向連結。</li><br></ul>3. <strong>專屬資料夾隔離</strong>：<br><ul><li>新建了 <code>CLD_Guide/</code> 資料夾，並將指南與 17 篇練習筆記全部移入其中，實現專案檔案夾的乾淨隔離。</li><br></ul>4. <strong>CLD 英文模擬考題知識庫建立與網絡映射</strong>：<br><ul><li>新建了 <code>CLD_sample_exams_english/</code> 資料夾。</li><br><li>批次生成了 4 篇經典模擬試題筆記：<code>ATM Exam.md</code>、<code>Boiler Exam.md</code>、<code>Car Wash Exam.md</code> 與 <code>Sprinkler Exam.md</code>。</li><br><li>每篇考題包含 Objective、Sequence of Operation 狀態轉移圖 (以 Mermaid 繪製)、檔案規格，以及<strong>與 <code>CLD_Guide</code> 單元練習的實戰 WikiLinks 關聯</strong>。</li><br><li>更新了主指南底部，增設「模擬考題綜合實戰連結」區段，在 Obsidian 中成功塑造出完整的「基礎單元 ➔ 綜合大題」雙向知識網絡。</li><br></ul>5. <strong>主導覽地圖更新</strong>：<br><ul><li>已將 CLD 實戰指南與英文模擬考題入口連結，順利補入首頁 <code>Notes/000_Index 索引：Obsidian 自動化專案.md</code> 導覽系統中。</li><br></ul><br><hr><br><br><h2>🔍 錯誤與學習 (Errors & Learning)</h2><br>1. <strong>Powershell 轉義與 Python 單行指令語法錯誤</strong>：<br><ul><li>*現象*：在控制台直接執行含有大括號、引號與換行符的 <code>python -c</code> 命令時，Powershell 的解析機制極易觸發 <code>SyntaxError: unterminated string literal</code>。</li><br><li>*解決*：將複雜操作（如更新 Index 連結、搬移檔案）改為在 <code>scratch/</code> 下撰寫獨立的 Python 檔案，再以 <code>python <file>.py</code> 執行，語法更清晰且不易出錯。</li><br></ul>2. <strong>000_Index 內文 replace 取代失敗</strong>：<br><ul><li>*現象*：在 <code>create_cld_guide_note.py</code> 中更新首頁時，replace 邏輯由於對前導空格與反斜線匹配不精準而失效。</li><br><li>*解決*：直接對檔案內容進行特徵匹配（相容換行與空格符），並改寫成精準替換，隨後以 Python 腳本成功覆寫。</li><br></ul>3. <strong>Google 憑證與 Puppeteer 鎖定權限衝突</strong>：<br><ul><li>*現象*：試圖將 <code>notebooklm-mcp.jc.tsjh</code> 重命名覆寫為 <code>notebooklm-mcp</code> 時，由於 Puppeteer 進程運行中佔用了部分 chrome_profile 檔案，引發 <code>PermissionError: [WinError 5] 存取被拒</code>。</li><br><li>*解決*：使用 Python 腳本避開鎖定檔並覆寫了 <code>library.json</code> 等配置，但由於雲端共用權限與 session cookies 差異，最終靈活轉向直接從本地 artifacts 中提取出 4 篇考題文字並寫入 Obsidian，完成了完美替代方案。</li><br></ul><br><hr><br><br><h2>🚀 下次待辦事項 (Next Todo)</h2><br>1. <strong>補充 LabVIEW 進階實作細節</strong>：在 4 篇模擬考題中，逐步補入各題 subVI 架構設計、Enum 設計規範以及 100ms 反應時間的非阻塞 UI 事件架構 Gotchas。<br>2. <strong>健全 Science 專題</strong>：依據 <code>Science/國高中理化核心公式與定律總整理.md</code> 的規劃，繼續補充力學、電學等學科專題的詳細筆記與 LaTeX 公式。<br>3. <strong>Logs Dashboard 檢視</strong>：下一次啟動時，檢查 Logs Dashboard 網頁的顯示排版是否正常呈現今日的工作進度。<br>
+    </div>
+</body>
+</html>
